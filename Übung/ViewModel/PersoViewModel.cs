@@ -22,7 +22,8 @@ namespace Übung.ViewModel
         /// <inheritdoc />
         public PersoViewModel ()
         {
-            Init ();
+            BestCommand = new BestCommand (this);
+            PersonenList = new List<Person> ();
         }
 
         public List<Person> PersonenList { get; set; }
@@ -66,12 +67,6 @@ namespace Übung.ViewModel
         public BestCommand BestCommand { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
-
-        private void Init ()
-        {
-            BestCommand = new BestCommand (this);
-            PersonenList = new List<Person> ();
-        }
 
         [NotifyPropertyChangedInvocator]
         protected virtual void OnPropertyChanged ([CallerMemberName] string propertyName = null)
