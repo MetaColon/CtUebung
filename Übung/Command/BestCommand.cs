@@ -30,8 +30,12 @@ namespace Übung.Command
         /// <inheritdoc />
         public void Execute (object parameter)
         {
-            if (int.TryParse (_viewModel.Alter, out var alter))
-                _viewModel.PersonenList.Add (new Person (_viewModel.Vorname, _viewModel.Name, alter));
+            if (!int.TryParse (_viewModel.Alter, out var alter))
+                return;
+            var vorname = _viewModel.Vorname;
+            var name = _viewModel.Name;
+            var person = new Person(vorname, name, alter);
+            _viewModel.PersonenList.Add (person);
         }
 
         /// <inheritdoc />
