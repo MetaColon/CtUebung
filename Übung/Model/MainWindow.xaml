@@ -1,0 +1,43 @@
+﻿<Window x:Class="Übung.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Übung.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="250">
+    <Window.DataContext>
+        <local:PersoViewModel />
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Personendaten" HorizontalAlignment="Center" />
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Label Content="Vorname:" Grid.Row="0" Grid.Column="0" Margin="10,0,10,0" />
+            <Label Content="Name:" Grid.Row="1" Grid.Column="0" Margin="10,0,10,0" />
+            <Label Content="Alter:" Grid.Row="2" Grid.Column="0" Margin="10,0,10,0" />
+
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="0,5,10,5" Height="20" Text="{Binding Vorname}" />
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="0,5,10,5" Height="20" Text="{Binding Name}" />
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="0,5,10,5" Height="20" Text="{Binding Alter}" />
+            <Button Grid.Row="3" Grid.Column="1" HorizontalAlignment="Right" Content="Bestätigen" Margin="0,5,10,5"
+                    Command="{Binding BestCommand}" />
+        </Grid>
+    </Grid>
+</Window>

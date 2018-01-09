@@ -1,0 +1,16 @@
+C:\Users\Meta Colon\RiderProjects\Übung\Übung\bin\Debug\Übung.exe.config
+C:\Users\Meta Colon\RiderProjects\Übung\Übung\bin\Debug\Übung.exe
+C:\Users\Meta Colon\RiderProjects\Übung\Übung\bin\Debug\Übung.pdb
+C:\Users\Meta Colon\RiderProjects\Übung\Übung\obj\Debug\Übung.csprojResolveAssemblyReference.cache
+C:\Users\Meta Colon\RiderProjects\Übung\Übung\obj\Debug\Model\MainWindow.g.cs
+C:\Users\Meta Colon\RiderProjects\Übung\Übung\obj\Debug\App.g.cs
+C:\Users\Meta Colon\RiderProjects\Übung\Übung\obj\Debug\Übung_MarkupCompile.cache
+C:\Users\Meta Colon\RiderProjects\Übung\Übung\obj\Debug\Übung_MarkupCompile.lref
+C:\Users\Meta Colon\RiderProjects\Übung\Übung\obj\Debug\Model\MainWindow.baml
+C:\Users\Meta Colon\RiderProjects\Übung\Übung\obj\Debug\Übung.g.resources
+C:\Users\Meta Colon\RiderProjects\Übung\Übung\obj\Debug\Übung.Properties.Resources.resources
+C:\Users\Meta Colon\RiderProjects\Übung\Übung\obj\Debug\Übung.csproj.GenerateResource.Cache
+C:\Users\Meta Colon\RiderProjects\Übung\Übung\obj\Debug\Übung.csproj.CoreCompileInputs.cache
+C:\Users\Meta Colon\RiderProjects\Übung\Übung\obj\Debug\Übung.exe
+C:\Users\Meta Colon\RiderProjects\Übung\Übung\obj\Debug\Übung.pdb
+C:\Users\Meta Colon\RiderProjects\Übung\Übung\obj\Debug\GeneratedInternalTypeHelper.g.cs
