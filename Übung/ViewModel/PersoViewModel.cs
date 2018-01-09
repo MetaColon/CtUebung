@@ -1,41 +1,35 @@
-﻿using System;
+﻿#region
+
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Runtime.CompilerServices;
 
 using Übung.Annotations;
 using Übung.Command;
 using Übung.Types;
 
+#endregion
+
 
 namespace Übung.ViewModel
 {
     public class PersoViewModel : INotifyPropertyChanged
     {
-        private string _vorname;
-        private string _name;
         private string _alter;
+        private string _name;
+        private string _vorname;
 
         /// <inheritdoc />
         public PersoViewModel ()
         {
-            Init();
+            Init ();
         }
-
-        private void Init ()
-        {
-            BestCommand = new BestCommand(this);
-            PersonenList = new List<Person> ();
-        }
-        
-        public event PropertyChangedEventHandler PropertyChanged;
 
         public List<Person> PersonenList { get; set; }
 
         public string Vorname
         {
-            get { return _vorname; }
+            get => _vorname;
             set
             {
                 if (value == _vorname)
@@ -47,7 +41,7 @@ namespace Übung.ViewModel
 
         public string Name
         {
-            get { return _name; }
+            get => _name;
             set
             {
                 if (value == _name)
@@ -59,7 +53,7 @@ namespace Übung.ViewModel
 
         public string Alter
         {
-            get { return _alter; }
+            get => _alter;
             set
             {
                 if (value == _alter)
@@ -70,6 +64,14 @@ namespace Übung.ViewModel
         }
 
         public BestCommand BestCommand { get; set; }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void Init ()
+        {
+            BestCommand = new BestCommand (this);
+            PersonenList = new List<Person> ();
+        }
 
         [NotifyPropertyChangedInvocator]
         protected virtual void OnPropertyChanged ([CallerMemberName] string propertyName = null)

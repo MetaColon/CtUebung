@@ -13,10 +13,6 @@
           <e p="BestCommand.cs" t="Include" />
         </e>
         <e p="Manager" t="Include" />
-        <e p="Model" t="Include">
-          <e p="MainWindow.xaml" t="Include" />
-          <e p="MainWindow.xaml.cs" t="Include" />
-        </e>
         <e p="obj" t="ExcludeRecursive" />
         <e p="Properties" t="Include">
           <e p="Annotations.cs" t="Include" />
@@ -26,6 +22,10 @@
         </e>
         <e p="Types" t="Include">
           <e p="Person.cs" t="Include" />
+        </e>
+        <e p="View" t="Include">
+          <e p="MainWindow.xaml" t="Include" />
+          <e p="MainWindow.xaml.cs" t="Include" />
         </e>
         <e p="ViewModel" t="Include">
           <e p="PersoViewModel.cs" t="Include" />
