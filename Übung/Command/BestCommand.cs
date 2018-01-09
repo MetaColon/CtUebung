@@ -19,13 +19,9 @@ namespace Übung.Command
         public BestCommand (PersoViewModel viewModel) => _viewModel = viewModel;
 
         /// <inheritdoc />
-        public bool CanExecute (object parameter)
-        {
-            Debug.WriteLine ("Checked for execution");
-            return !string.IsNullOrEmpty (_viewModel.Vorname) &&
-                   !string.IsNullOrEmpty (_viewModel.Name) &&
-                   !string.IsNullOrEmpty (_viewModel.Alter);
-        }
+        public bool CanExecute (object parameter) => !(string.IsNullOrEmpty (_viewModel.Vorname) ||
+                                                     string.IsNullOrEmpty (_viewModel.Name) ||
+                                                     string.IsNullOrEmpty (_viewModel.Alter));
 
         /// <inheritdoc />
         public void Execute (object parameter)
