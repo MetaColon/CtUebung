@@ -33,9 +33,9 @@
             <Label Content="Name:" Grid.Row="1" Grid.Column="0" Margin="10,0,10,0" />
             <Label Content="Alter:" Grid.Row="2" Grid.Column="0" Margin="10,0,10,0" />
 
-            <TextBox Grid.Row="0" Grid.Column="1" Margin="0,5,10,5" Height="20" Text="{Binding Vorname}" />
-            <TextBox Grid.Row="1" Grid.Column="1" Margin="0,5,10,5" Height="20" Text="{Binding Name}" />
-            <TextBox Grid.Row="2" Grid.Column="1" Margin="0,5,10,5" Height="20" Text="{Binding Alter}" />
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="0,5,10,5" Height="20" Text="{Binding Vorname, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="0,5,10,5" Height="20" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Grid.Row="2" Grid.Column="1" Margin="0,5,10,5" Height="20" Text="{Binding Alter, UpdateSourceTrigger=PropertyChanged}" />
             <Button Grid.Row="3" Grid.Column="1" HorizontalAlignment="Right" Content="Bestätigen" Margin="0,5,10,5"
                     Command="{Binding BestCommand}" />
         </Grid>
